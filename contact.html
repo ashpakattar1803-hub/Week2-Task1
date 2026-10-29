@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | NexaWorks</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="index.html"><span>N</span>exaWorks.</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a><a href="about.html">About</a>
+        <a href="services.html">Services</a><a class="nav-cta active-cta" href="contact.html">Contact Us ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">WE'D LOVE TO HEAR FROM YOU</span>
+        <h1>Have an idea? <span>Let's talk.</span></h1>
+        <p>Tell us what you're working on, and let's explore how we can help.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">CONTACT OUR TEAM</span>
+          <h2>Let's start a <span>conversation.</span></h2>
+          <p class="muted">Share a little about your goals, your business or the challenge you're trying to solve.</p>
+          <div class="contact-detail"><span>✉</span><div><small>EMAIL</small><strong>hello@nexaworks.com</strong></div></div>
+          <div class="contact-detail"><span>◷</span><div><small>WORKING HOURS</small><strong>Monday–Friday, 9 AM–5 PM</strong></div></div>
+          <img class="contact-photo" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80" alt="Colleagues discussing a project" loading="lazy">
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required minlength="2">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="service">Interested in</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option>UI/UX Design</option><option>Web Development</option>
+            <option>Digital Marketing</option><option>Brand Identity</option><option>Other</option>
+          </select>
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required minlength="10"></textarea>
+          <button type="submit" class="btn btn-primary form-button">Send Message ↗</button>
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner">
+    <a class="logo footer-logo" href="index.html">NexaWorks.</a><p>Creative thinking. Meaningful results.</p>
+    <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a></div>
+    <small>© <span class="year"></span> NexaWorks.</small>
+  </div></footer>
+</body>
+</html>
